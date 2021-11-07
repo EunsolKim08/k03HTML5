@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberRegist.html</title>
+<style type="text/css">
+    div{ /*모든 문서의 div태그로 설정가능*/
+        border:2px solid #BDBDBD;
+        margin: 40px;
+        width: 760px;
+        height: 710px;
+    }
+    table{
+        border: 1px solid #BDBDBD;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    .nec{
+        font-weight: bold;
+        color: #FA5858;
+    }
+    .nec1{
+        font-weight: bold;
+        color: #FA5858;
+        margin-left: 650px; 
+        margin-top: 10px;
+    }
+    .bu{
+        margin-left: 260px; 
+        font-weight: bold;
+    }
+    .re{
+        color: #A4A4A4;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+    <div>
+    
+    <span class= "nec1">*  </span>필수입력
+    <table bgcolor= '#BDBDBD'
+        width = 700px height =600px>
+        <tr>
+            <th bgcolor= '#D8D8D8' > <span class= "nec">*</span>아이디 </th>
+            <td bgcolor="white"> &nbsp; <input type="text" name="user_id" size= "15" minlength= "4" maxlength="15"     
+            </td>
+            &nbsp;<input type="button" value = "중복확인" style="color: white; background:#2E2E2E; font-size:0.8em;">  
+            <span class="re">+4~15자, 첫 영문자, 영문자와 숫자조합</span>
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'> <span class= "nec">*</span>비밀번호</th>
+            <td bgcolor="white">&nbsp;<input type="password" name="user_pwd" size= "7" maxlength="7"></td>
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'>&nbsp;<span class= "nec">*</span>비밀번호 확인</th>
+            <td bgcolor="white" >&nbsp;<input type="password" name="user_pwd" size= "7" maxlength="7">&nbsp;
+                <span class="re">(확인을 위해 다시 입력해주세요.)</span> </td>
+            
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'><span class= "nec">*</span>이름</th>
+            <td bgcolor="white">&nbsp;<input type="password" name="user_name" size= "10" maxlength="10"></td>
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'>생년월일</th>
+            <td bgcolor="white">
+                <form name = "form">                    
+                    <input type="radio" name = "gender"
+                    value = "M" checked>남자
+                    <input type="radio" name = "gender"
+                    value = "F">여자
+                    &nbsp;
+                    <input type="text" name="user_year" size= "4" maxlength="4">년
+                    <input type="text" name="user_month" size= "2" maxlength="2">월
+                    <input type="text" name="user_day" size= "2" maxlength="2">일
+                &nbsp;&nbsp;&nbsp;(예, 2021년 1월 1일)
+                </form>
+                <!-- &nbsp;&nbsp; -->
+                
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="2" bgcolor='#D8D8D8'><span class= "nec">*</span>이메일</th>
+            <td bgcolor="white"> 
+                <form name = "form2">       
+                    &nbsp;<input type="text" name= "em1" size= "6" maxlength="6">@
+                    <input type="text" name= "em2" size= "6" maxlength="6">             
+                    <input type="radio" name = "snsRe"
+                    value = "Y1" checked>수신허용
+                    <input type="radio" name = "snsRe"
+                    value = "N1">수신불가
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="white"> 
+                <span class="re"> &nbsp;* 한메일은 수신이 어려울 수 있으니 가급적 다른 이메일을 이용 바랍니다.</span>
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="3" bgcolor='#D8D8D8'>주소</th>
+           
+            <td bgcolor="white"> &nbsp;<input type="button" value = "주소찾기" style="color: white; background:#2E2E2E; font-size:0.8em;>
+                &nbsp;<input type="text" name="add" size= "6" maxlength="6">(우편번호) 
+            </td>
+        </tr>
+        <tr>   
+            <td bgcolor="white">&nbsp;<input type="text" name="add2" size= "25" maxlength="25"> </td>
+        </tr>
+        <tr>
+            <td bgcolor="white">&nbsp;<input type="text" name="add3" size= "18" maxlength="18"> (+나머지 주소)</td>
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'>전화번호: </th>
+            <td bgcolor="white"> &nbsp;
+                <input type="text" name= "num1" size= "3" maxlength="3">-
+                <input type="text" name= "num2" size= "3" maxlength="3">-
+                <input type="text" name= "num3" size= "3" maxlength="3">
+            </td>
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'><span class= "nec">*</span>휴대전화</th>
+            <td bgcolor="white"> 
+                <form name = "form3">&nbsp;     
+                    <input type="text" name= "phn1" size= "3" maxlength="3">-
+                    <input type="text" name= "phn2" size= "3" maxlength="3">-
+                    <input type="text" name= "phn3" size= "3" maxlength="3">
+
+                    <input type="radio" name = "snsRe2"
+                    value = "Y2" checked>SMS 수신허용
+                    <input type="radio" name = "snsRe2"
+                    value = "N2">SMS 수신불가
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'><span class= "nec">*</span>관심분야</th>
+            <td bgcolor="white">
+                <form action= "">&nbsp;
+                    <select name= "hobby">
+                    <option value = "sel"> &nbsp;|| 관심분야 선택||&nbsp;</option>
+                    <option value = "read"> 독서</option>
+                    <option value = "sing"> 노래부르기</option>
+                    <option value = "walk"> 걷기</option>
+                    <option value = "dance"> 춤추기</option>
+                    <option value = "cook"> 요리하기</option>
+                </form> 
+            </td>
+        </tr>
+        <tr>
+            <th bgcolor='#D8D8D8'><span class= "nec">*</span>가입경로&nbsp;</th>
+            <td bgcolor="white"> 
+                <form action= "">&nbsp;
+                    <select name= "registway">
+                    <option value = "sel2">&nbsp; ||&nbsp;&nbsp;&nbsp;가입    경로&nbsp;&nbsp;&nbsp;||&nbsp;</option>
+                    <option value = "internet1"> 네이버검색</option>
+                    <option value = "internet2"> 다음검색</option>
+                    <option value = "internet3"> 티스토리</option>
+                    <option value = "ad"> 인터넷 광고</option>
+                    <option value = "ppl"> 지인의 권유</option>
+                </form> 
+            </td>
+        </tr>
+    </table>
+    <br>
+    <span class="bu" > <button type="button" style="color: white; background:red; font-size:1.2em; float:center;" >등록하기</button>
+       &nbsp;&nbsp; <button type="button" style="color: white; background:#2E2E2E; font-size:1.2em;" >새로쓰기</button> </span>
+
+        
+</div>
+
+</body>
+</html>
