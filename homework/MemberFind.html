@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberFind.html</title>
+
+    <style>
+        div{
+        border: 6px outset #BDBDBD;
+        margin: 80px;
+        width: 680px;
+        height: 250px;
+    }
+    .id_pw_find{
+     position: absolute; left: 80px; top: 40px;
+    }
+    .logo1{
+        position: absolute; left: 178px; top: 160px;
+    }
+    .logo2{
+        position: absolute; left: 178px; top: 200px;
+    }
+    .name{
+        position: absolute; left: 200px; top: 160px;
+     
+        font-weight: bold;
+        color: grey;
+    }
+    .user_name{
+        width: 295px;
+        height: 18px;
+    }
+    #choice{
+        position: absolute; left: 200px; top: 200px;
+        height: 25px;
+        width: 105px;
+    }
+    .p_num{
+        position: absolute; left: 320px; top: 200px;
+    }
+    .line{
+        color: grey;
+        position: absolute; left: 220px; top: 230px;
+    }
+    .exp{
+        color: grey;
+        font-size: 13px;
+        position: absolute; left: 220px; top: 285px;
+    }
+   
+    </style>
+</head>
+<body>
+    <form class= "id_pw_find" action="">
+        <input type="radio" name="find"
+        value = "id_find" checked>아이디 찾기
+        <input type="radio" name="find"
+        value="pw_find" >비밀번호 찾기
+    </form>
+    
+    <div>
+      <ul>
+        <img class="logo1" src="./로그인-리소스/화살표.jpg" alt="화살표"/> 
+          <span class="name">
+          이름(대표자명)&nbsp;&nbsp;<input class = "user_name" type="text" name="user_name" size= "10" maxlength="10"></span>
+        <img class="logo2" src="./로그인-리소스/화살표.jpg" alt="화살표"/>
+          <form action=""">
+            <select name="choice" id="choice">
+                <option value="phone">휴대전화</option>
+                <option value="email">이메일</option>
+            </select>&nbsp;&nbsp;
+             <span class = "p_num"> <input type="text" name= "phn1" size= "3" maxlength="3" style="height: 19px;">&nbsp-
+                    <input type="text" name= "phn2" size= "3" maxlength="3" style="height: 19px;">&nbsp;-&nbsp;
+                    <input type="text" name= "phn3" size= "3" maxlength="3"style="height: 19px;">
+            </span>   
+        </form>
+    </ul>
+        <span class="line">....................................................................................................................</span>
+        <br><br><br>
+        <span class="exp">아이디를 찾기 위해 서 이름과 휴대번호 혹은 이메일을 입력하세요.</span> 
+
+    </div>
+    
+</body>
+</html>

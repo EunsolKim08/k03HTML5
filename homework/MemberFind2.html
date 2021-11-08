@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberFind2.html</title>
+
+    <style>
+        div{
+        border: 6px outset #BDBDBD;
+        margin: 80px;
+        width: 680px;
+        height: 250px;
+    }
+    .logo1{
+        position: absolute; left: 178px; top: 120px;
+    }
+    .logo2{
+        position: absolute; left: 178px; top: 160px;
+    }
+    .logo3{
+        position: absolute; left: 178px; top: 200px;
+    }
+    .id_pw_find{
+     position: absolute; left: 80px; top: 40px;
+    }
+    .name{
+        position: absolute; left: 200px; top: 160px;
+        font-weight: bold;
+        color: grey;
+    }
+    .user_name{
+        width: 295px;
+        height: 18px;
+    }
+    .user_id{
+        width: 295px;
+        height: 18px;
+    }
+    .id{
+        position: absolute; left: 200px; top: 120px;
+        font-weight: bold;
+        color: grey;
+    }
+    #choice{
+        position: absolute; left: 200px; top: 200px;
+        height: 25px;
+        width: 105px;
+    }
+    .p_email{
+        position: absolute; left: 320px; top: 200px;
+        font-size: 16px;
+    }
+    .line{
+        color: grey;
+        position: absolute; left: 220px; top: 230px;
+    }
+    .exp{
+        color: grey;
+        font-size: 13px;
+        position: absolute; left: 220px; top: 285px;
+    }
+    #address{
+        height: 25px;
+        font-size: 16px;
+    }
+    </style>
+</head>
+<body>
+    <form class= "id_pw_find" action="">
+        <input type="radio" name="find"
+        value = "id_find" >아이디 찾기
+        <input type="radio" name="find"
+        value="pw_find" checked>비밀번호 찾기
+    </form>
+    
+    <div>
+        <img class="logo1" src="./로그인-리소스/화살표.jpg" alt="화살표"/>
+        <img class="logo2" src="./로그인-리소스/화살표.jpg" alt="화살표"/>
+        <img class="logo3" src="./로그인-리소스/화살표.jpg" alt="화살표"/>
+        <span class="id">아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class = "user_id" type="text" name="user_id" size= "10" maxlength="10"> </span>
+       <span class="name">이름(대표자명)&nbsp;&nbsp;<input class = "user_name" type="text" name="user_name" size= "10" maxlength="10"> </span>
+        <form action="">
+            <select name="choice" id="choice">
+                <option value="email" >이메일</option>
+                <option value="phone">휴대전화</option>
+            </select>&nbsp;&nbsp;
+             <span class = "p_email"> <input type="text" name= "p_email1" size= "10" maxlength="10" style="height: 19px;">@
+                    <input type="text" name= "p_email2" size= "10" maxlength="10" style="height: 19px;">
+                    <form action="">
+                        <select name="address" id="address">
+                            <option value="direct">직접입력</option>
+                            <option value="naver" >naver.com</option>
+                            <option value="hanmail">hanmail.net</option>
+                            <option value="gmail">gmail.com</option>
+                        </select>
+                    </form>
+            </span>  
+        </form>
+        <span class="line">....................................................................................................................</span>
+        <br><br><br>
+        <span class="exp">아이디를 찾기 위해 서 이름과 휴대번호 혹은 이메일을 입력하세요.</span> 
+
+    </div>
+    
+</body>
+</html>
